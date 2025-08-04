@@ -1,0 +1,71 @@
+<html>
+<html>
+<head>
+  <title>Flight Route Visualizer</title>
+  <link rel="stylesheet" href="homestyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="routevisual.css"/>
+  <script src="routevisual.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      height: 500px;
+    }
+    #controls {
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #details {
+      margin-top: 10px;
+    }
+  </style> -->
+</head>
+<body>
+  <section id="top">
+    <a href="JetAvio.html"><p class="logo-image"></p></a>
+    <div class="button-group">
+      <a href="Jetavio.html"><button>Home</button></a>
+      <a href="jetaircrafts.html"><button>Aircrafts</button></a>
+      <a href="jetavioflights.html"><button>Flights</button></a>
+      <a href="jetavioradar.html"><button>Radar</button></a>
+      <a href="jetaviosignup.html"><button>Sign Up</button></a>
+      <a href="jetavioabout.html"><button>About</button></a>
+    </div>
+  </section>
+
+  <center><button class="back-button" onclick="goBack()">Back to previous page</button></center><br>
+
+  <div id="controls">
+    <label for="origin">Origin:</label>
+    <select id="origin">
+      <option value="">Select Origin</option>
+    </select>
+
+    <label for="destination">Destination:</label>
+    <select id="destination">
+      <option value="">Select Destination</option>
+    </select>
+
+    <button id="showRoute">Show Route</button>
+
+    <div id="details">
+      <p><strong>Origin:</strong> <span id="origin-name"></span></p>
+      <p><strong>Destination:</strong> <span id="destination-name"></span></p>
+      <p><strong>Distance:</strong> <span id="distance"></span></p>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+</body>
+</html>
+

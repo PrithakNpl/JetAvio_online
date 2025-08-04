@@ -1,0 +1,259 @@
+<html>
+<head>
+    <title>JetAvio.com</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="comparison.css">
+</head>
+<body>
+    <!-- Section top --> 
+    <section id="top">
+        <a href="JetAvio.html"><p class="logo-image"></p></a>
+        <div class="button-group">
+            <a href="JetAvio.html"><button>Home</button></a>
+            <a href="jetaircrafts.html"><button>Aircrafts</button></a>
+            <a href="jetavioflights.html"><button>Flights</button></a>
+            <a href="jetavioradar.html"><button>Radar</button></a>
+            <a href="jetaviosignup.html"><button>Sign Up</button></a>
+            <a href="jetavioabout.html"><button>About</button></a>
+        </div>
+    </section>
+
+    <!-- Aircraft Selection Form -->
+    <section id="bottom">
+        <center>
+            <form id="compareForm">
+                <br><br>
+                <label>Choose Aircraft 1:</label> 
+                <select id="aircraft1">
+                    <option>--select--</option>
+                    <optgroup label="Airbus">
+                        <option value="a300">A300</option>
+                        <option value="a310">A310</option>
+                        <option value="a318">A318</option>
+                        <option value="a319">A319</option>
+                        <option value="a320">A320</option>
+                        <option value="a321">A321</option>
+                        <option value="a330-200">A330-200</option>
+                        <option value="a330-300">A330-300</option>
+                        <option value="a330-800">A330-800</option>
+                        <option value="a330-900">A330-900</option>
+                        <option value="a340-200">A340-200</option>
+                        <option value="a340-300">A340-300</option>
+                        <option value="a340-500">A340-500</option>
+                        <option value="a340-600">A340-600</option>
+                        <option value="a350-900">A350-900</option>
+                        <option value="a350-1000">A350-1000</option>
+                        <option value="a380">A380</option>
+                    </optgroup>
+                    <optgroup label="Boeing">
+                        <option value="b707">B707</option>
+                        <option value="b717">B717</option>
+                        <option value="b727">B727</option>
+                        <option value="b737-7">B737-7</option>
+                        <option value="b737-8">B737-8</option>
+                        <option value="b737-9">B737-9</option>
+                        <option value="b737-10">B737-10</option>
+                        <option value="b747-200">B747-200</option>
+                        <option value="b747-400">B747-400</option>
+                        <option value="b747-8">B747-8</option>
+                        <option value="b757-200">B757-200</option>
+                        <option value="b757-300">B757-300</option>
+                        <option value="b767">B767</option>
+                        <option value="b777-200ER">B777-200ER</option>
+                        <option value="b777-300ER">B777-300ER</option>
+                        <option value="b777-8">B777-8</option>
+                        <option value="b777-9">B777-9</option>
+                        <option value="b787-8">B787-8</option>
+                        <option value="b787-9">B787-9</option>
+                        <option value="b787-10">B787-10</option>
+                    </optgroup>
+                    <optgroup label="ATR">
+                        <option value="atr42-500">ATR42-500</option>
+                        <option value="atr42-600">ATR42-600</option>
+                        <option value="atr42-300">ATR42-300</option>
+                        <option value="atr42-320">ATR42-320</option>
+                        <option value="atr42-200">ATR42-200</option>
+                        <option value="atr72-500">ATR72-500</option>
+                        <option value="atr72-600">ATR72-600</option>
+                        <option value="atr72-200">ATR72-200</option>
+                        <option value="atr72-210">ATR72-210</option>
+                    </optgroup>
+                    <optgroup label="COMAC">
+                        <option value="carj21">ARJ21</option>
+                        <option value="c919">C919</option>
+                        <!-- <option value="c929">C929</option> -->
+                    </optgroup>
+                </select>
+                <br><br><br>
+                <label>Choose Aircraft 2:</label> 
+                <select id="aircraft2">
+                    <option>--select--</option>
+                    <optgroup label="Airbus">
+                        <option value="a300">A300</option>
+                        <option value="a310">A310</option>
+                        <option value="a318">A318</option>
+                        <option value="a319">A319</option>
+                        <option value="a320">A320</option>
+                        <option value="a321">A321</option>
+                        <option value="a330-200">A330-200</option>
+                        <option value="a330-300">A330-300</option>
+                        <option value="a330-800">A330-800</option>
+                        <option value="a330-900">A330-900</option>
+                        <option value="a340-200">A340-200</option>
+                        <option value="a340-300">A340-300</option>
+                        <option value="a340-500">A340-500</option>
+                        <option value="a340-600">A340-600</option>
+                        <option value="a350-900">A350-900</option>
+                        <option value="a350-1000">A350-1000</option>
+                        <option value="a380">A380</option>
+                    </optgroup>
+                    <optgroup label="Boeing">
+                        <option value="b707">B707</option>
+                        <option value="b717">B717</option>
+                        <option value="b727">B727</option>
+                        <option value="b737-7">B737-7</option>
+                        <option value="b737-8">B737-8</option>
+                        <option value="b737-9">B737-9</option>
+                        <option value="b737-10">B737-10</option>
+                        <option value="b747-200">B747-200</option>
+                        <option value="b747-400">B747-400</option>
+                        <option value="b747-8">B747-8</option>
+                        <option value="b757-200">B757-200</option>
+                        <option value="b757-300">B757-300</option>
+                        <option value="b767">B767</option>
+                        <option value="b777-200ER">B777-200ER</option>
+                        <option value="b777-300ER">B777-300ER</option>
+                        <option value="b777-8">B777-8</option>
+                        <option value="b777-9">B777-9</option>
+                        <option value="b787-8">B787-8</option>
+                        <option value="b787-9">B787-9</option>
+                        <option value="b787-10">B787-10</option>
+                    </optgroup>
+                    <optgroup label="ATR">
+                        <option value="atr42-500">ATR42-500</option>
+                        <option value="atr42-600">ATR42-600</option>
+                        <option value="atr42-300">ATR42-300</option>
+                        <option value="atr42-320">ATR42-320</option>
+                        <option value="atr42-200">ATR42-200</option>
+                        <option value="atr72-500">ATR72-500</option>
+                        <option value="atr72-600">ATR72-600</option>
+                        <option value="atr72-200">ATR72-200</option>
+                        <option value="atr72-210">ATR72-210</option>
+                    </optgroup>
+                    <optgroup label="COMAC">
+                        <option value="carj21">ARJ21</option>
+                        <option value="c919">C919</option>
+                        <!-- <option value="c929">C929</option> -->
+                    </optgroup>
+                </select>
+                <br><br><br>
+                <button type="button" onclick="displayDetails()">COMPARE</button>
+            </form>
+        </center>
+    </section>
+
+    <!-- Aircraft Details Section -->
+    <section class="details-container">
+        <!-- Aircraft 1 section -->
+        <div class="aircraft-column">
+            <h2>Aircraft 1</h2>
+            <img id="aircraft1Image" alt="Aircraft 1 Image">
+            <h3>Specifications:</h3>
+            <img id="aircraft1Details" alt="Aircraft 1 Details">
+        </div>
+    
+        <!-- Aircraft 2 section -->
+        <div class="aircraft-column">
+            <h2>Aircraft 2</h2>
+            <img id="aircraft2Image" alt="Aircraft 2 Image">
+            <h3>Specifications:</h3>
+            <img id="aircraft2Details" alt="Aircraft 2 Details">
+        </div>
+    </section>
+
+    <center><button class="back-button" onclick="goBack()">Back to Aircrafts</button></center>
+
+    <script>
+        function displayDetails() {
+            const aircraft1 = document.getElementById("aircraft1").value;
+            const aircraft2 = document.getElementById("aircraft2").value;
+
+            // Map of aircraft to images (image and details)
+            const aircraftImages = {
+
+                //AIRBUS
+
+                "a300": { image: "a300.jpg", details: "a300details.jpg" },
+                "a310": { image: "a310.jpg", details: "a310details.jpg" },
+                "a318": { image: "a318.jpg", details: "a318details.jpg" },
+                "a319": { image: "a319.jpg", details: "a319details.jpg" },
+                "a320": { image: "a320.jpg", details: "a320details.jpg" },
+                "a321": { image: "a321.jpg", details: "a321details.jpg" },
+                "a330-200": { image: "a330-200.jpg", details: "a330-200details.jpg" },
+                "a330-300": { image: "a330-300.jpg", details: "a330-300details.jpg" },
+                "a330-800": { image: "a330-800.jpg", details: "a330-800details.jpg" },
+                "a330-900": { image: "a330-900.jpg", details: "a330-900details.jpg" },
+                "a340-200": { image: "a340-200.jpg", details: "a340-200details.jpg" },
+                "a340-300": { image: "a340-300.jpg", details: "a340-300details.jpg" },
+                "a340-500": { image: "a340-500.jpg", details: "a340-500details.jpg" },
+                "a340-600": { image: "a340-600.jpg", details: "a340-600details.jpg" },
+                "a350-900": { image: "a350-900.jpg", details: "a350-900details.jpg" },
+                "a350-1000": { image: "a350-1000.jpg", details: "a350-1000details.jpg" },
+                "a380": { image: "a380.jpg", details: "a380details.jpg" },
+                
+
+                //BOEING
+
+                "b707": { image: "b707.jpg", details: "b707details.jpg" },
+                "b717": { image: "b717.jpg", details: "b717details.jpg" },
+                "b727": { image: "b727.jpg", details: "b727details.jpg" },
+                "b737-7": { image: "b737-7.jpg", details: "b737-7details.jpg" },
+                "b737-8": { image: "b737-8.jpg", details: "b737-8details.jpg" },
+                "b737-9": { image: "b737-9.jpg", details: "b737-9details.jpg" },
+                "b737-10": { image: "b737-10.jpg", details: "b737-10details.jpg" },
+                "b747-200": { image: "b747-200.jpg", details: "b747-200details.jpg" },
+                "b747-400": { image: "b747-400.jpg", details: "b747-400details.jpg" },
+                "b747-8": { image: "b747-8.jpg", details: "b747-8details.jpg" },
+                "b757-200": { image: "b757-200.jpg", details: "b757-200details.jpg" },
+                "b757-300": { image: "b757-300.jpg", details: "b757-300details.jpg" },
+                "b767": { image: "b767.jpg", details: "b767details.jpg" },
+                "b777-200ER": { image: "b777-200ER.jpg", details: "b777-200ERdetails.jpg" },
+                "b777-300ER": { image: "b777-300ER.jpg", details: "b777-300ERdetails.jpg" },
+                "b777-8": { image: "b777-8.jpg", details: "b777-8details.jpg" },
+                "b777-9": { image: "b777-9.jpg", details: "b777-9details.jpg" },
+                "b787-8": { image: "b787-8.jpg", details: "b787-8details.jpg" },
+                "b787-9": { image: "b787-9.jpg", details: "b787-9details.jpg" },
+                "b787-10": { image: "b787-10.jpg", details: "b787-10details.jpg" },
+
+                //ATR
+
+                "atr42-500": { image: "atr42-500.jpg", details: "atr42-500details.jpg" },
+                "atr42-600": { image: "atr42-600.jpg", details: "atr42-600details.jpg" },
+                "atr42-300": { image: "atr42-300.jpg", details: "atr42-300details.jpg" },
+                "atr42-320": { image: "atr42-320.jpg", details: "atr42-320details.jpg" },
+                "atr42-200": { image: "atr42-200.jpg", details: "atr42-200details.jpg" },
+                "atr72-500": { image: "atr72-500.jpg", details: "atr72-500details.jpg" },
+                "atr72-600": { image: "atr72-600.jpg", details: "atr72-600details.jpg" },
+                "atr72-200": { image: "atr72-200.jpg", details: "atr72-200details.jpg" },
+                "atr72-210": { image: "atr72-210.jpg", details: "atr72-210details.jpg" },
+
+                //COMAC
+
+                "carj21": { image: "carj21.jpg", details: "carj21details.jpg" },
+                "c919": { image: "c919.jpg", details: "c919details.jpg" }
+                // "c929": { image: "c929.jpg", details: "c929details.jpg" }
+            };
+
+            // Set the images and details for each aircraft
+            document.getElementById("aircraft1Image").src = aircraftImages[aircraft1].image;
+            document.getElementById("aircraft1Details").src = aircraftImages[aircraft1].details;
+            document.getElementById("aircraft2Image").src = aircraftImages[aircraft2].image;
+            document.getElementById("aircraft2Details").src = aircraftImages[aircraft2].details;
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
