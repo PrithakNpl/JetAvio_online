@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-size: cover;
+    background-image: url('WBBGradient.jpg');
+    height: 100%;
+}
+label{font-size: 25px}
+select{font-size: 20px}
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 20px; /* Adjust space between aircraft columns */
+}
+
+.aircraft-column {
+    width: 45%; /* Each column takes 45% of the container width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aircraft-column img {
+    max-width: 100%; /* Ensure images fit within their column */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}

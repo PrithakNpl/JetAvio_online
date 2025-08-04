@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    box-sizing: border-box;
+}
+#top {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+#top .button-group {
+    display: flex;
+    gap: 10px; 
+}
+/* .logo-text {
+    text-align: left;
+    font-size: 75px;
+    color: white;
+    margin: 0;
+} */
+.logo-image {
+    background-image: url('jetaviologo.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+    width: 200px; /* Adjust width according to your logo size */
+    /* Optional: Add margin for spacing from the edges */
+    margin-right: 20px; /* Space between logo and button group */
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+button a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+}
+button:hover {
+    background-color: white;
+    color: black; 
+}
+#first { background-image: url('747forb.jpg'); background-size: cover; }
+#second { background-image: url('concorde.jpg'); background-size: cover; }
+#third { background-image: url('planeatnight.jpg'); background-size: cover; }
+#fourth { background-image: url('sr71.jpg'); background-size: cover; }
+#fifth {
+    background-color: #000;
+    height: 25%;
+    color: white;
+    text-align: center;
+}
+/* Container to hold all sections horizontally */
+#scrollcontainer {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    scrollbar-width: none; 
+}
+#scrollcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+                                /*FOR RADAR*/
+#map {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+                                /*FOR ROUTE VISUALIZATION*/
+
+#compare_route_button-container {
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to opposite sides */
+    align-items: center; /* Ensures vertical alignment */
+    width: 100%; /* Ensure the container spans the full width */
+    margin: 0 15px; /* Adjust spacing inside the container */
+}
+                                
+#compare_route_button-container a button {
+    margin: 0; /* Remove extra margin from buttons */
+}
+                                
+                            
+                                
+                                
+                                
+

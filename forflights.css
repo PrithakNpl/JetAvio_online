@@ -1,0 +1,29 @@
+fieldset {
+    width: 70%; height: 50%;
+    background-image: url('default.jpg');
+    transition: background-image 0.75s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white; /* Change text color to white for better visibility */
+}
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay with lower opacity */
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+select, label, legend, input[type="text"] , input[type="date"] {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for form elements with lower opacity */
+    padding: 5px;
+    border-radius: 5px;
+    color: black; /* Change text color back to black for form elements */
+}
+

@@ -1,0 +1,59 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+body{
+    background-size: cover; 
+    background-image: url('WBBGradient.jpg'); 
+    height: 100%
+}
+.details-container {
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            gap: 10px;
+
+}
+.details-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.details-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.details-table img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.back-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#aircraft-image {
+    width: 45%;
+    height: 35%;
+    border: 2px solid black;
+    margin-top: 35px;
+    margin-left: 35px;
+    /* margin-bottom: 15%; */
+    margin-bottom: 303px;
+}
+#details-table {
+    width: 45%;
+    height: 70%;
+    border: 2px solid black;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+
